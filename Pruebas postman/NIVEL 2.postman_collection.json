@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "6050162c-ef74-4b67-8882-47612ed0eb55",
+		"name": "NIVEL 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31526407"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/generar-token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": \"usuario\",\r\n  \"contraseña\": \"contrasena\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/generar-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"generar-token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/generar-token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"usuario\": \"usuario\",\r\n  \"contraseña\": \"contrasena\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/generar-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"generar-token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-znZjPqbDM2GbU2pCimTmXIqUc8k\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Dec 2023 18:35:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoidXN1YXJpbyIsImlhdCI6MTcwMjIzMzM0NiwiZXhwIjoxNzAyMjM2OTQ2fQ.X2uN_ULCUhLyrTIYS_Z-CMlwZHDGNq26x3JdXrPGnkI\",\n    \"claveUnica\": \"9250e222c4c71f0c58d4c54b50a880a312e9f9fed55d5c3aa0b0e860ded99165\"\n}"
+				},
+				{
+					"name": "http://localhost:3000/generar-token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"usuario\": \"usuario\",\r\n  \"contraseña\": \"contrasena\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/generar-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"generar-token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-znZjPqbDM2GbU2pCimTmXIqUc8k\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Dec 2023 18:35:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoidXN1YXJpbyIsImlhdCI6MTcwMjIzMzM0NiwiZXhwIjoxNzAyMjM2OTQ2fQ.X2uN_ULCUhLyrTIYS_Z-CMlwZHDGNq26x3JdXrPGnkI\",\n    \"claveUnica\": \"9250e222c4c71f0c58d4c54b50a880a312e9f9fed55d5c3aa0b0e860ded99165\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/calcular-prestamo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoidXN1YXJpbyIsImlhdCI6MTcwMjIzMzM0NiwiZXhwIjoxNzAyMjM2OTQ2fQ.X2uN_ULCUhLyrTIYS_Z-CMlwZHDGNq26x3JdXrPGnkI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idMaterial\": \"003\",\r\n  \"pesoGramos\": 45\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/calcular-prestamo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"calcular-prestamo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/calcular-prestamo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoidXN1YXJpbyIsImlhdCI6MTcwMjIzMzM0NiwiZXhwIjoxNzAyMjM2OTQ2fQ.X2uN_ULCUhLyrTIYS_Z-CMlwZHDGNq26x3JdXrPGnkI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idMaterial\": \"003\",\r\n  \"pesoGramos\": 45\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/calcular-prestamo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"calcular-prestamo"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17-ufImSsE6xf8177zsQrDE+o62L/g\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Dec 2023 18:36:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"montoPrestamo\": 28800\n}"
+				}
+			]
+		}
+	]
+}
