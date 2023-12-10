@@ -1,0 +1,433 @@
+{
+  "id": "5c6104d3-d765-4c94-8878-09cab59145f3",
+  "version": "2.0",
+  "name": "Calculadora de prestamos",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "c7f5f0db-3593-47a4-92f3-623d83b75c9c",
+    "name": "prueba de integracion api-front",
+    "commands": [{
+      "id": "c5219238-dcec-4bd9-a70f-25810595c237",
+      "comment": "",
+      "command": "open",
+      "target": "/Reto_Tecnico/NMPVal/frontend/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aab7c4fc-8d66-44d4-adc8-0ede9620643c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91f2889e-5c69-4031-8e0a-b7f25547494c",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18920a82-0f7d-4fae-bba0-7e71e61eab04",
+      "comment": "",
+      "command": "click",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "107b5a0b-af32-4d1b-8b4b-b42bb46de979",
+      "comment": "",
+      "command": "type",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "001"
+    }, {
+      "id": "1784e579-55fc-41e4-921b-12b669e72d86",
+      "comment": "",
+      "command": "type",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "34e5a3d4-f377-4b1e-9bb4-b308e302a3ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular Préstamo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a55c0885-5ad6-452b-8079-fb617a8b48cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c433107-941d-486c-bcef-0498453bc323",
+      "comment": "",
+      "command": "type",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "001"
+    }, {
+      "id": "0c1f394c-7d3e-45e4-8e1c-8d25c9b48a61",
+      "comment": "",
+      "command": "type",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "d98e5868-c1fd-4892-8cb2-20d4b950d495",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular Préstamo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cf83a97-e3a4-404c-ae8c-1296b8e73b21",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular Préstamo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ffebbf8-aaeb-4c33-8eba-c239c73a0fbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69628d74-54c6-44b7-8aac-6dcca38ffb4c",
+      "comment": "",
+      "command": "click",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e06820c-685d-4da3-a60d-986463f82941",
+      "comment": "",
+      "command": "type",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "010"
+    }, {
+      "id": "fa01f0cd-c934-4876-9055-3f23f0a050ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular Préstamo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd8134e4-7c72-46ae-807a-89fd6fdbe9c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21bc8388-ec09-412b-9cec-a85364001dc9",
+      "comment": "",
+      "command": "type",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "004"
+    }, {
+      "id": "e77a0c47-a2a4-4f19-a601-805330b0603c",
+      "comment": "",
+      "command": "click",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9516be8f-4634-484c-a20d-1db2da597fd5",
+      "comment": "",
+      "command": "type",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "ce05a480-76bc-4270-8b30-2a73dcd58aee",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular Préstamo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dbda323-5638-4db6-aa10-3bd98c26abaf",
+      "comment": "",
+      "command": "click",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a39cf4f-e532-40da-ae5f-162d412f167a",
+      "comment": "",
+      "command": "type",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "007"
+    }, {
+      "id": "65a685fb-805a-483e-93cd-834346fcc720",
+      "comment": "",
+      "command": "click",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d784de5-faf8-43cd-af3d-16bb1dc92317",
+      "comment": "",
+      "command": "type",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "ace53ec0-3466-405d-8cf3-ce531cc0b4ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular Préstamo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e511d762-09e8-49e5-9276-09bf5608613f",
+      "comment": "",
+      "command": "click",
+      "target": "id=idMaterial",
+      "targets": [
+        ["id=idMaterial", "id"],
+        ["name=idMaterial", "name"],
+        ["css=#idMaterial", "css:finder"],
+        ["xpath=//input[@id='idMaterial']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ff359e0-74e7-4bd9-b37f-866c6f44cbcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a23a87df-9cb2-490a-9e96-1f60efeb33d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d4237cd-8a91-4ec6-b09c-ccd266b8cbb0",
+      "comment": "",
+      "command": "type",
+      "target": "id=pesoGramos",
+      "targets": [
+        ["id=pesoGramos", "id"],
+        ["name=pesoGramos", "name"],
+        ["css=#pesoGramos", "css:finder"],
+        ["xpath=//input[@id='pesoGramos']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "6edb6cce-39f8-4c1b-a891-1058139fba98",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular Préstamo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cf325ae-8a0a-413b-8745-8ac5148412b1",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ed430f05-753f-41a8-89a9-aa318f16cb0c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c7f5f0db-3593-47a4-92f3-623d83b75c9c"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

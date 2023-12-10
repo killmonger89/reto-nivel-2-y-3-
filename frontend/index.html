@@ -1,0 +1,25 @@
+<!-- Archivo index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Préstamo</title>
+</head>
+<body>
+  <h1>Calculadora de Préstamo</h1>
+  <form id="formulario">
+    <label for="idMaterial">ID de Material:</label>
+    <input type="text" id="idMaterial" name="idMaterial" required>
+
+    <label for="pesoGramos">Peso en Gramos:</label>
+    <input type="number" id="pesoGramos" name="pesoGramos" required>
+
+    <button type="button" onclick="calcularPrestamo()">Calcular Préstamo</button>
+    <label for="montoPrestamo">Monto del Préstamo:</label>
+    <input type="text" id="montoPrestamo" readonly>
+
+  </form>
+  <script src="app.js"></script>
+</body>
+</html>

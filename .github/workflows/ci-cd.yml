@@ -1,0 +1,35 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 5
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install --save-dev mocha chai axios body-parser cors crypto mongodb mongoose swagger-jsdoc swagger-ui-express
+      
+
+    - name: Run tests
+      run: npm test
+
+
+    - name: Deploy to production
+      if: success()
+      run: |
+        node app.js 
+    
+          
