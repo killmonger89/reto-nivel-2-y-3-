@@ -71,8 +71,11 @@ function llamarCalcularPrestamo() {
     .then(response => response.json())
     .then(data => {
       console.log('Monto del préstamo:', data.montoPrestamo);
-       
-        document.getElementById('montoPrestamo').value =  data.montoPrestamo;
+       if (data.montoPrestamo == undefined){
+        document.getElementById('montoPrestamo').value = 'Material no Registrado';
+      }else{
+        document.getElementById('montoPrestamo').value = data.montoPrestamo;
+      }
     })
     .catch(error => {
       console.error('Error al calcular préstamo:', error);
