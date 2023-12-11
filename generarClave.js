@@ -63,7 +63,7 @@ const generarClaveSHA256 = (data) => {
 authService.post('/generar-token', (req, res) => {
   const { usuario, contraseña } = req.body;
 
-  // Verificar credenciales (esto debería ser más seguro en un entorno de producción)
+  // Verificar credenciales 
   if (usuario === 'usuario' && contraseña === 'contrasena') {
     // Generar un token con información del usuario
     const token = jwt.sign({ usuario }, secretKey, { expiresIn: '1h' });
@@ -154,7 +154,7 @@ const server = authService.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
 
-// Configurando un temporizador para cerrar el servidor después de 10 minutos (ajusta según tus necesidades)
+// Configurando un temporizador para cerrar el servidor después de 15 minutos 
 const tiempoDeEjecucionEnMilisegundos = 15 * 60 * 1000; // 15 minutos
 setTimeout(() => {
   server.close(() => {
