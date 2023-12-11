@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "2f2e31f1-e189-4d7b-bf9a-9f78ba6e80df",
+		"name": "API de Valuación",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31526407"
+	},
+	"item": [
+		{
+			"name": "valuacion",
+			"item": [
+				{
+					"name": "reto tecnico nivel 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"idMaterial\": \"007\",\n  \"pesoGramos\": 50\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-valuacion-406716.cloudfunctions.net/valuacion",
+							"protocol": "https",
+							"host": [
+								"us-central1-valuacion-406716",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"valuacion"
+							],
+							"query": [
+								{
+									"key": "idMaterial",
+									"value": "005",
+									"disabled": true
+								},
+								{
+									"key": "pesoGramos",
+									"value": "500",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "reto tecnico nivel 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"idMaterial\": \"007\",\n  \"pesoGramos\": 50\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://us-central1-valuacion-406716.cloudfunctions.net/valuacion",
+									"protocol": "https",
+									"host": [
+										"us-central1-valuacion-406716",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"valuacion"
+									],
+									"query": [
+										{
+											"key": "idMaterial",
+											"value": "005",
+											"disabled": true
+										},
+										{
+											"key": "pesoGramos",
+											"value": "500",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Function-Execution-Id",
+									"value": "v96elc5800uo"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "7293ca3bae392e1866f4335844ba4e99;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Dec 2023 21:46:39 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"montoPrestamo\": 4000\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
