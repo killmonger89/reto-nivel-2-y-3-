@@ -3,7 +3,7 @@ const axios = require('axios');
 const { authService } = require('./generarClave');
 
 describe('Pruebas para authService', function () {
-  // Antes de todas las pruebas, inicia el servidor
+  // iniciar el servidor
  const PORT = 3001;
 
 before(function (done) {
@@ -13,7 +13,7 @@ before(function (done) {
   });
 });
 
-  // Después de todas las pruebas, cierra el servidor
+  // cerrar el servidor
   after(function (done) {
   this.server.close(() => {
     console.log('Servidor de prueba cerrado');
@@ -35,8 +35,7 @@ before(function (done) {
   });
 
   it('Debería calcular un préstamo protegido', function () {
-    // Aquí puedes realizar la llamada para generar un token y luego usarlo para la llamada protegida
-    return axios.post('http://localhost:3000/generar-token', {
+      return axios.post('http://localhost:3000/generar-token', {
       usuario: 'usuario',
       contraseña: 'contrasena',
     })
