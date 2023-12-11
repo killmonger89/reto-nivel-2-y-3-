@@ -1,7 +1,4 @@
 // Archivo app.js (frontend/app.js)
-
-// Archivo app.js (frontend/app.js)
-
 let token; // Variable global para almacenar el token
 
 function generarToken() {
